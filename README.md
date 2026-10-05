@@ -2,13 +2,13 @@
 
 > **Read-only archive of released versions of prm/moderation.** Not for installation: use [Packagist](https://packagist.org/packages/prm/moderation) or the [upstream repository](https://github.com/smmpanelscripts1/prm-moderation).
 
-**1** versions archived · Latest: [`0.1.0`](https://github.com/flarchive/prm-moderation/tree/archive/v0.1.0) · License: `MIT` · Flarum: `^1.8`
+**0** versions archived · Latest: [`2.0.0`](https://github.com/flarchive/prm-moderation/tree/archive/v2.0.0) · License: `MIT` · Flarum: `^2.0.0-rc.8`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| `0.1.0` | 2026-09-17 | `^1.8` | [Browse](https://github.com/flarchive/prm-moderation/tree/archive/v0.1.0) |
+| — | — | — | — |
 
 Catalog entry: [packages/prm-moderation.json](https://github.com/flarchive/archive-index/blob/main/packages/prm-moderation.json)
 
