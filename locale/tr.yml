@@ -1,0 +1,171 @@
+prm-moderation:
+  admin:
+    permissions:
+      access_label: Moderasyon paneline eriş
+      report_label: Kullanıcı / konu / mesaj raporla
+      ticket_label: Destek talebi aç
+    settings:
+      enabled_label: İçerik spam filtresini aç
+      enabled_help: Yeni hesapların konu başlığı ve mesajlarını spam sinyallerine karşı tarar.
+      monitor_all_users_label: Tüm kullanıcıları tara
+      monitor_all_users_help: Yeni hesap penceresini yok say; personel yine muaf.
+      monitor_post_count_label: İlk N mesajı tara
+      monitor_post_count_help: Bu kadar veya daha az mesajı olan kullanıcılar incelenir.
+      monitor_hours_old_label: Şu saatten genç hesapları tara
+      monitor_hours_old_help: Bu kadar saat içinde açılmış hesaplar da incelenir.
+      detect_urls_label: İzin listesi dışı URL tespit et
+      detect_emails_label: E-posta adresi tespit et
+      detect_phones_label: Telefon numarası tespit et (+/00…)
+      detect_blocked_words_label: Engelli kelime tespit et
+      scan_usernames_label: Kullanıcı adlarını tara
+      scan_usernames_help: Spam gibi duran kayıt / kullanıcı adı değişikliğini engeller (aynı dedektörler + spam eşiği).
+      scan_nicknames_label: Takma adları tara
+      scan_nicknames_help: Nicknames eklentisi gerekir. Spam görünen görünen adları reddeder.
+      scan_bios_label: Kullanıcı biyografilerini tara
+      scan_bios_help: User Bio eklentisi gerekir. Spam görünen bio metinlerini reddeder.
+      allowed_domains_label: İzin verilen domainler
+      allowed_domains_help: Satır başına bir domain. Forum hostu her zaman izinlidir.
+      blocked_words_label: Engelli kelimeler
+      blocked_words_help: Satır başına bir kelime veya ifade.
+      flag_threshold_label: Flag / rapor eşiği
+      flag_threshold_help: Soft sinyal skoru; flag ve moderasyon raporu oluşturur (varsayılan 30).
+      spam_threshold_label: Onay bekleme eşiği
+      spam_threshold_help: Hard sinyal skoru; içeriği onaya düşürür (varsayılan 50).
+      auto_flag_label: Otomatik Flag oluştur
+      auto_flag_help: Flags eklentisi gerekir.
+      auto_unapprove_label: İçeriği otomatik onaya düşür
+      auto_unapprove_help: Approval eklentisi gerekir.
+      auto_report_label: Otomatik moderasyon raporu oluştur
+      auto_report_help: Moderasyon panelinde bekleyen spam raporu açar.
+      system_user_id_label: Sistem kullanıcı ID
+      system_user_id_help: Otomatik işlemlerde raporlayan / flag yazarı (genelde 1).
+      hide_posts_on_mark_label: "Spammer işaretle: mesajları gizle"
+      hide_discussions_on_mark_label: "Spammer işaretle: konuları gizle"
+      suspend_on_mark_label: "Spammer işaretle: kullanıcıyı askıya al"
+  forum:
+    header: Moderasyon
+    header_tickets: Destek
+    nav_warnings: Uyarılar
+    spam:
+      profile_blocked: Bu profil alanı spam gibi görünüyor ve engellendi.
+    user_controls:
+      warn: Uyarı gönder
+      report: Raporla
+      mark_spammer: Spammer olarak işaretle
+      mark_spammer_confirm: Bu kullanıcının içeriği gizlensin ve spammer olarak askıya alınsın mı?
+
+    post_controls:
+      warn: Uyarı gönder
+      report: Mesajı raporla
+    discussion_controls:
+      warn: Uyarı gönder
+      report: Konuyu raporla
+    report:
+      title_user: "{username} kullanıcısını raporla"
+      title_post: Mesajı raporla
+      title_discussion: Konuyu raporla
+      reason: Sebep
+      reason_placeholder: (Seçin)
+      reason_spam: Spam
+      reason_abuse: Hakaret / taciz
+      reason_illegal: Kural dışı içerik
+      reason_other: Diğer
+      details: Açıklama
+      submit: Raporu gönder
+      success: Rapor moderasyon paneline iletildi.
+    warn:
+      title: "{username} kullanıcısına uyarı gönder"
+      points: Uyarı puanı
+      reason: Sebep
+      comment: Açıklama (isteğe bağlı)
+      submit: Uyarı gönder
+      success: Uyarı kaydedildi.
+    warnings:
+      empty: Henüz uyarı yok.
+      points: "{points} puan"
+      by: "{username} tarafından"
+    panel:
+      title: Moderasyon Paneli
+      pending: Bekleyen raporlar
+      resolved: Çözülenler
+      rejected: Reddedilenler
+      empty: Bu listede rapor yok.
+      reporter: Raporlayan
+      target: Kullanıcı
+      type: Tür
+      type_user: Kullanıcı
+      type_post: Mesaj
+      type_discussion: Konu
+      reason: Sebep
+      date: Tarih
+      actions: İşlem
+      open: İncele
+      view_content: İçeriğe git
+      chart_activity: Konu / cevap (30 gün)
+      chart_moderation: Rapor / uyarı (30 gün)
+      chart_discussions: Konu
+      chart_replies: Cevap
+      chart_reports: Rapor
+      chart_warnings: Uyarı
+    tickets:
+      title: Destek taleplerim
+      panel_title: Destek talepleri
+      section_reports: Raporlar
+      section_tickets: Destek
+      create: Yeni talep
+      empty: Henüz destek talebi yok.
+      empty_inbox: Bekleyen talep yok.
+      subject: Konu
+      category: Kategori
+      category_placeholder: (Seçin)
+      category_account: Hesap
+      category_payment: Ödeme / ticaret
+      category_technical: Teknik sorun
+      category_appeal: Uyarı / ban itirazı
+      category_other: Diğer
+      priority: Öncelik
+      priority_normal: Normal
+      priority_high: Yüksek
+      message: Mesaj
+      submit: Talebi gönder
+      success: Destek talebiniz oluşturuldu.
+      reply: Yanıt yaz
+      send_reply: Gönder
+      close: Talebi kapat
+      reopen: Yeniden aç
+      closed: Bu talep kapatıldı.
+      status: Durum
+      status_open: Yeni
+      status_waiting: Yanıt bekliyor
+      status_answered: Yanıtlandı
+      status_closed: Kapalı
+      inbox: Bekleyenler
+      user: Kullanıcı
+      last_update: Son güncelleme
+      open: Aç
+      assigned: "{username} ilgilendi"
+      mine_open: Açık talepler
+      mine_closed: Kapalı talepler
+      staff_badge: Yetkili
+    handle:
+      title: Raporu incele
+      delete_content: İçeriği sil (gizle)
+      warn: Uyarı gönder
+      ban: Kullanıcıyı banla
+      ban_days: Ban süresi
+      ban_1: 1 gün
+      ban_7: 7 gün
+      ban_30: 30 gün
+      ban_0: Kalıcı
+      warning_reason: Uyarı sebebi
+      warning_points: Uyarı puanı
+      ban_reason: Ban sebebi
+      resolve: Çöz ve uygula
+      reject: Reddet
+      close: Kapat
+    notifications:
+      warning_received: "{username} size uyarı gönderdi ({points} puan)"
+      notify_warning_label: Biri bana uyarı gönderdiğinde
+      ticket_replied: "{username} destek talebinize yanıt verdi"
+      ticket_replied_staff: "{username} destek talebine yanıt verdi"
+      notify_ticket_label: Destek talebime yanıt geldiğinde
